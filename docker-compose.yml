@@ -1,0 +1,52 @@
+version: "3.8"
+
+services:
+  nginx:
+    image: deathwalker66/nginx
+    container_name: DEV.NGinX
+    hostname: dev-nginx
+    volumes:
+      # Bind mounts directos
+      - type: bind
+        source: ./APP
+        target: /APP
+      - type: bind
+        source: ./CFG/nginx/default.conf
+        target: /etc/nginx/conf.d/default.conf
+      - type: bind
+        source: /mnt/Dock/Com
+        target: /COM
+      - type: bind
+        source: ./SCP
+        target: /SCP
+      - type: bind
+        source: ./LOG/error.log
+        target: /var/log/nginx/error.log
+      - type: bind
+        source: ./LOG/access.log
+        target: /var/log/nginx/access.log
+    ports:
+      - target: 22
+        published: 31022
+        protocol: tcp
+        mode: host
+      - target: 80
+        published: 31080
+        protocol: tcp
+        mode: host
+      - target: 443
+        published: 31443
+        protocol: tcp
+        mode: host
+    networks:
+      - catnet
+    env_file:
+      - .env
+    restart: unless-stopped
+    security_opt:
+      - no-new-privileges:true
+
+networks:
+  catnet:
+    name: catnet
+    external: true

@@ -1,0 +1,9 @@
+2026/04/23 05:31:48 [emerg] 12#12: unknown directive "/var/log/nginx/access.log" in /etc/nginx/nginx.conf:22
+2026/04/23 05:31:50 [emerg] 13#13: unknown directive "/var/log/nginx/access.log" in /etc/nginx/nginx.conf:22
+2026/04/23 05:31:52 [emerg] 12#12: unknown directive "/var/log/nginx/access.log" in /etc/nginx/nginx.conf:22
+2026/04/23 05:31:55 [emerg] 12#12: unknown directive "/var/log/nginx/access.log" in /etc/nginx/nginx.conf:22
+2026/04/23 05:31:57 [emerg] 13#13: unknown directive "/var/log/nginx/access.log" in /etc/nginx/nginx.conf:22
+2026/04/23 05:31:59 [emerg] 12#12: unknown directive "/var/log/nginx/access.log" in /etc/nginx/nginx.conf:22
+2026/04/23 05:32:04 [emerg] 12#12: unknown directive "/var/log/nginx/access.log" in /etc/nginx/nginx.conf:22
+2026/04/23 05:32:11 [emerg] 12#12: unknown directive "/var/log/nginx/access.log" in /etc/nginx/nginx.conf:22
+2026/04/23 05:32:25 [emerg] 12#12: unknown directive "/var/log/nginx/access.log" in /etc/nginx/nginx.conf:22

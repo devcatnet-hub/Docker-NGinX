@@ -8,3 +8,4 @@
 
 ### Specific
     apk del openssl
+    rm /var/log/apk.log
